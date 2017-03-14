@@ -1,7 +1,7 @@
 import numpy as np 
 import random
 
-def generatePoints(n, line):
+def generatePoints(n):
 	X = []
 	Y = []
 	for i in xrange(n):
@@ -39,5 +39,5 @@ def generateLine():
 line = generateLine()
 slope, intercept = line[0], line[1]
 
-X, Y = generatePoints(20, line)
+X, Y = generatePoints(20)
 print "Weight : ", train(X, Y)
